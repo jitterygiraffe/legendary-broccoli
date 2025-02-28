@@ -1,4 +1,14 @@
-/* General Styles */
+:root {
+    --dark-blue: #144E62;
+    --light-blue: #03d4f4;
+}
+
+html, body {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%; /* Ensures the page doesn't exceed viewport height */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,9 +37,9 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin: 0;
+    gap: 100px;
     padding: 0;
+    margin-right: 500px;
 }
 
 .nav-links li {
@@ -44,7 +54,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #f4a261;
+    color: var(--light-blue);
 }
 
 /* Sections */
@@ -52,9 +62,9 @@ body {
     height: 100vh; /* Full screen height */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 50px;
 }
 
@@ -62,3 +72,16 @@ body {
 #about { background: #ffffff; }
 #work { background: #ffffff; }
 #contact { background: #ffffff; color: white; }
+
+.title-txt {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: "700";
+    font-size: 100px;
+    color: var(--dark-blue);
+    font-style: normal;
+    width: 400px;
+}
+
+
+  
