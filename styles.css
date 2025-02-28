@@ -38,8 +38,7 @@ body {
     list-style: none;
     display: flex;
     gap: 100px;
-    padding: 0;
-    margin-right: 500px;
+    margin-right: 200px;
 }
 
 .nav-links li {
@@ -93,4 +92,18 @@ body {
     font-style: normal;
     width: 400px;
 }
+.night-mode {
+    width: 30px;
+    margin-right: 200px;
+    margin-top: 10px;
+}
 
+.night-mode:hover{
+    cursor: pointer;
+}
+
+.night-mode {
+  background-color: #144E62;
+  color: aliceblue;
+
+}
