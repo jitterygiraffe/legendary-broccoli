@@ -74,6 +74,9 @@ body {
     align-items: left;
     text-align: left;
     gap: 350px;
+    z-index: 10;
+    position: relative;
+    top: 320px;
 }
 
 #home { background: #ffffff; }
