@@ -13,7 +13,7 @@
   } */
 
 html, body {
-   / Prevent scrolling */
+    overflow: hidden;
     height: 100%; /* Ensures the page doesn't exceed viewport height */
     color: var(--primary);
     font-family: "lato";
@@ -24,6 +24,7 @@ body {
 }
 
 .navbar {
+    z-index: 1000;
     position: fixed;
     top: 0;
     width: 100%;
