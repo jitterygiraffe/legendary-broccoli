@@ -68,6 +68,14 @@ body {
     padding: 50px;
 }
 
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    gap: 350px;
+}
+
 #home { background: #ffffff; }
 #about { background: #ffffff; }
 #work { background: #ffffff; }
