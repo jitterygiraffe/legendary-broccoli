@@ -1,6 +1,20 @@
 //night mode functionality
-let nightModeToggle = document.querySelector(".night-mode-btn");
+const nightModeToggle = document.querySelector(".night-mode-btn");
 
-nightModeToggle.addEventListener("click", ()=> {
-    document.documentElement.classList.toggle("night-mode")
-})
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+                //  let doc = document.documentElement;
+                
+                //  console.log(nightModeToggle);
+                nightModeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("night-mode");
+                // if (doc.classList.contains("night-mode")) {
+                //     doc.style.background = "red";
+                // };
+                console.log("Night mode toggled!"); 
+            });
+    });
+    
+    

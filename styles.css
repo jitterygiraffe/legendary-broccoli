@@ -1,22 +1,28 @@
 :root {
-    --dark-blue: #144E62;
-    --light-blue: #03d4f4;
+    --primary: #144E62;
+    --secondary: #0b86b7;
+    --tertiary: #ffffff;
+    --black: #272e31;
 }
+
+/*  
+.dark-mode {
+    --primary: #282c35;
+    --secondary: #fff;
+    --tertiary: #fff;
+  } */
 
 html, body {
     overflow: hidden; /* Prevent scrolling */
     height: 100%; /* Ensures the page doesn't exceed viewport height */
+    color: var(--primary);
+    font-family: "lato";
 }
-
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    background-color: white;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -46,14 +52,15 @@ body {
 }
 
 .nav-links a {
-    color: var(--dark-blue);
+    color: var(--primary);
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--light-blue);
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 /* Sections */
@@ -78,32 +85,51 @@ body {
     top: 320px;
 }
 
-#home { background: #ffffff; }
-#about { background: #ffffff; }
-#work { background: #ffffff; }
-#contact { background: #ffffff; color: white; }
 
 .title-txt {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: "700";
     font-size: 100px;
-    color: var(--dark-blue);
+    color: var(--primary);
     font-style: normal;
     width: 400px;
 }
-.night-mode {
+.night-mode-btn {
     width: 30px;
     margin-right: 200px;
     margin-top: 10px;
 }
 
-.night-mode:hover{
+.night-mode-btn:hover{
     cursor: pointer;
 }
 
-.night-mode {
-  background-color: #144E62;
-  color: aliceblue;
 
+.night-mode {
+    background-color: var(--black);
+    color: white;
+}
+
+.night-mode .title-txt {
+    /* color: rgb(221, 217, 217); */
+    filter: invert(100%);
+}
+
+.night-mode .navbar {
+    background-color: var(--black);
+}
+
+.night-mode .night-mode-btn {
+    filter: invert(100%);
+}
+
+.night-mode .nav-links a {
+    filter: invert(100%)
+    
+}
+
+
+.night-mode .lottie-animation {
+    filter: invert(100%);
 }
