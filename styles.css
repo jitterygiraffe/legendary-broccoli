@@ -13,7 +13,7 @@
   } */
 
 html, body {
-    overflow: hidden; /* Prevent scrolling */
+   / Prevent scrolling */
     height: 100%; /* Ensures the page doesn't exceed viewport height */
     color: var(--primary);
     font-family: "lato";
@@ -142,3 +142,11 @@ body {
 .night-mode .lottie-animation {
     filter: invert(100%);
 }
+
+
+.txt-animation{
+    width: 1140px !important; 
+    z-index: -10; 
+    padding-right: 50px;
+    padding-left: 7px;
+};
