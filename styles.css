@@ -13,7 +13,7 @@
   } */
 
 html, body {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%; /* Ensures the page doesn't exceed viewport height */
     color: var(--primary);
     font-family: "lato";
@@ -79,9 +79,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: left;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: left;
-    min-height: 100vh;
+    gap: 300px;
 }
 
 .home-content {
@@ -151,3 +151,11 @@ body {
     padding-right: 50px;
     padding-left: 7px;
 };
+
+.about-me-txt {
+    width: 500px;
+}
+
+.webdev-icon {
+    width: 50px;
+}
