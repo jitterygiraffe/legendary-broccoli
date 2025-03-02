@@ -79,9 +79,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: left;
-    /* justify-content: center; */
+    /* /* justify-content: center;  */
     text-align: left;
     gap: 300px;
+    padding-top: 150px;
 }
 
 .home-content {
