@@ -90,7 +90,7 @@ body {
     flex-direction: row;
     align-items: left;
     text-align: left;
-    gap: 350px;
+    gap: 400px;
     z-index: 10;
     position: relative;
     top: 370px;
