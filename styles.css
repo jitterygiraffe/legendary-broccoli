@@ -93,7 +93,7 @@ body {
     gap: 350px;
     z-index: 10;
     position: relative;
-    top: 320px;
+    top: 280px;
 }
 
 
@@ -106,6 +106,9 @@ body {
     font-style: normal;
     width: 1000px;
     line-height: normal;
+    position: inherit;
+    margin-top: -50px;
+    
 }
 .night-mode-btn {
     width: 30px;
