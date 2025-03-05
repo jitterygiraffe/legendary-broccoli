@@ -101,7 +101,7 @@ body {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: "700";
-    font-size: 200px;
+    font-size: 150px;
     color: var(--primary);
     font-style: normal;
     width: 1000px;
@@ -148,6 +148,7 @@ body {
 
 
 .txt-animation{
+
     width: 1140px !important; 
     z-index: -10; 
     padding-right: 50px;
