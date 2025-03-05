@@ -104,7 +104,8 @@ body {
     font-size: 200px;
     color: var(--primary);
     font-style: normal;
-    width: 400px;
+    width: 1000px;
+    line-height: normal;
 }
 .night-mode-btn {
     width: 30px;
