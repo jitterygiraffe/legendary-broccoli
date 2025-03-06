@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Grid</title>
+    <style>
+        canvas {
+            background-color: black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const dotSize = 5;  // Size of dots
+        const spacing = 30; // Spacing between dots
+
+        function drawGrid() {
+            ctx.fillStyle = "white"; // Dot color
+
+            for (let x = spacing; x < canvas.width; x += spacing) {
+                for (let y = spacing; y < canvas.height; y += spacing) {
+                    ctx.beginPath();
+                    ctx.arc(x, y, dotSize, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+        }
+
+        drawGrid(); // Call function to draw dots
+    </script>
+</body>
+</html>
